@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #1f1f1f;
+}
+nav {
+  display: flex;
+  gap: 50px;
+  margin: 10px;
+  justify-content: space-around;
+  background-color: #1f1f1f;
+}
+button {
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: #1f1f1f;
+}
+.intro_box {
+  margin: 100px;
+  width: 250px;
+  padding: 0.5rem;
+  font-size: 25px;
+  background-color: #1f1f1f;
+}
+h3 {
+  font-size: 28px;
+  margin: 10px;
+  width: 300px;
+  background-color: #1f1f1f;
+}
+.explain {
+  padding: 30px;
+  font-size: 25px;
+  display: flex;
+  /* width: 3000px; */
+  gap: 50px;
+  background-color: #1f1f1f;
+}
+.explore {
+  background-image: url(images/A_Sky_Full_Of_Stars_\(Unsplash\).jpg);
+  text-align: center;
+  padding: 8rem;
+  border-radius: 5px;
+}
+.join {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  margin: 8px;
+  border-radius: 20px;
+  font-size: medium;
+}
+footer {
+  display: flex;
+  gap: 20px;
+}
+
+i {
+  padding: 20px;
+  font-size: 40px;
+}
+.slogan {
+  padding-top: 5px;
+}
+.sun {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 50px gold;
+  margin-left: 50%;
+  margin-bottom: 90%;
+}
+.earth {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: darkcyan;
+  top: 50%;
+  left: 50%;
+  transform-origin: top left;
+  animation: rotate-earth 12s linear infinite;
+}
+.earth:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
+.moon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform-origin: top left;
+  animation: rotate-moon 6s linear infinite;
+}
+@keyframes rotate-moon {
+  0% {
+    transform: rotate(0deg) translateX(30px);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(30px);
+  }
+}
+@keyframes rotate-earth {
+  0% {
+    transform: rotate(0deg) translateX(100px);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(100px);
+  }
+}
