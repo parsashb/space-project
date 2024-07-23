@@ -45,16 +45,29 @@
   </head>
   <body>
     <nav>
-      <h1>Aster1</h1>
-      <button><h2>Home</h2></button>
-      <button><h2>About</h2></button>
-      <button><h2>pages</h2></button>
-      <button><h2>Contact Us</h2></button>
+      <div id="geeks">
+        <h1>Aster1</h1>
+      </div>
+      <button id="nav_btn"><h2>Home</h2></button>
+      <button id="nav_btn"><h2>About</h2></button>
+      <div class="pages">
+        <button id="nav_btn" class="collapse" type="button">
+          <h2>pages</h2>
+        </button>
+        <div class="text">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+        </div>
+      </div>
+      <button id="nav_btn"><h2>Contact Us</h2></button>
       <i class="fa fa-search-plus" style="font-size: 20px"></i>
     </nav>
     <div class="intro_box">
       <header>
-        <h3>A community Of astrology enthusaists</h3>
+        <div class="community">
+          <h3 id="animation">A community Of astrology enthusaists</h3>
+        </div>
       </header>
       <article>
         <p>
@@ -64,16 +77,18 @@
           doloremque mollitia?
         </p>
       </article>
+    </div>
+    <div class="solar">
       <div class="sun"></div>
 
       <div class="earth">
         <div class="moon"></div>
       </div>
     </div>
-    <header><h3>Astronomy Communities For Everyone</h3></header>
+    <header><h3 id="animation">Astronomy Communities For Everyone</h3></header>
     <div class="explain">
       <article>
-        <p class="community">
+        <p class="community_explain">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quae
           totam fuga dolor maiores rerum aspernatur reiciendis temporibus
           tempore aliquam! Dolore qui fugiat saepe ex in placeat ullam, aliquam
@@ -81,18 +96,19 @@
         </p>
       </article>
       <div class="numbers">
-        <div class="activeUsers"></div>
-        <h2>2,950+</h2>
-        <h6>active users</h6>
-        <div class="experience">
+        <div id="nums">
+          <h2>2,950+</h2>
+          <h6>active users</h6>
+        </div>
+        <div id="nums">
           <h2>12</h2>
           <h6>Years of experience</h6>
         </div>
-        <div class="branch_location">
+        <div id="nums">
           <h2>5</h2>
           <h6>Branch location</h6>
         </div>
-        <div class="observe_zones">
+        <div id="nums">
           <h2>24</h2>
           <h6>Observatory zones</h6>
         </div>
@@ -136,5 +152,18 @@
         <i class="fa fa-envelope">+6456945</i>
       </div>
     </footer>
+    <script>
+      let btn = document.getElementsByClassName("collapse");
+
+      btn[0].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    </script>
   </body>
 </html>
