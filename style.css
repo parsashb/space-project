@@ -1,317 +1,64 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
   background-color: #1f1f1f;
 }
-nav {
-  display: flex;
-  gap: 50px;
-  margin: 10px;
-  justify-content: space-around;
-  background-color: #1f1f1f;
+img {
+  width: 350px;
+  height: 250px;
 }
-.collapse {
-  /* background-color: #a2de96; */
-  border: none;
-  outline: none;
-  font-size: 15px;
-  margin-top: 12.5px;
-}
-
-.active,
-#nav_btn:hover {
-  background-color: darkcyan;
-  padding: 0.5px;
-}
-#nav_btn {
-  transition: all 0.2s;
-}
-#nav_btn:active {
-  background-color: goldenrod;
-}
-.text {
-  /* background-color: #e1ffc2; */
-  display: none;
-  font-size: 20px;
-}
-button {
-  border-radius: 8px;
+h1 {
   text-align: center;
-  border: none;
-  cursor: pointer;
-  background-color: #1f1f1f;
+  margin: 0.5rem;
+  text-decoration: underline;
+  color: white;
 }
-.intro_box {
-  margin: 100px;
-  width: 450px;
-  padding: 0.5rem;
-  font-size: 25px;
-  background-color: #1f1f1f;
-}
-h3 {
-  font-size: 28px;
-  margin: 10px;
-  width: 300px;
-  background-color: #1f1f1f;
-}
-.numbers {
-  padding: 5px;
-  border: #fff solid 1px;
-  padding: 80px;
-}
-#nums {
-  transition: 0.4s;
-}
-#nums:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  transform: translate(0px, -8px);
-  cursor: pointer;
-}
-.explain {
-  padding: 30px;
-  font-size: 25px;
+.posts {
   display: flex;
-  /* width: 3000px; */
-  gap: 50px;
-  background-color: #1f1f1f;
-  background-image: url(images/observatory.jpg);
-  margin-bottom: 5rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.explore {
-  background-image: url(images/A_Sky_Full_Of_Stars_\(Unsplash\).jpg);
-  text-align: center;
-  padding: 8rem;
-  border-radius: 5px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.join {
-  padding: 10px;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  margin: 8px;
-  border-radius: 20px;
-  font-size: medium;
-  transition: all 0.5s;
-}
-.join:hover {
-  background-color: #1f1f1f;
-}
-.join:active {
-  background-color: cornflowerblue;
-}
-footer {
-  display: flex;
-  gap: 20px;
-}
-
-i {
-  padding: 20px;
-  font-size: 40px;
-}
-.slogan {
-  padding-top: 5px;
-}
-#animation {
-  width: 200px;
-  height: 100px;
-  /* background-color: red; */
-  position: relative;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  /* transform: translate(-50%, -50%); */
-}
-/* @keyframes example {
-  0% {
-     background-color: red; 
-    left: 0px;
-    top: 0px;
-  } */
-/* 25% {
-    background-color: yellow;
-    bottom: 200px;
-    top: 0px;
-  } */
-/* 50% {
-     background-color: blue; 
-     eft: 500px; 
-     right: 600px; 
-    transform: rotate(0deg) translateX(30px);
-  } */
-/* 75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
-  } */
-/* 100% {
-    /* background-color: red; 
-  }
-}  */
-.solar {
-  display: flex;
+  color: white;
+  gap: 2rem;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: black;
-  width: 100%;
+  margin-top: 3.5rem;
 }
-.sun {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: gold;
-  border-radius: 50%;
-  box-shadow: 0 0 50px gold;
+.satlite,
+.shuttles,
+.space_rover {
+  box-shadow: 5px 10px 8px #888888;
+  margin-top: 2rem;
+  width: 350px;
+  transform: translate(-5px, -5px);
 }
-.earth {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: darkcyan;
-  top: 117%;
-  left: 48%;
-  right: 48%;
-
-  transform-origin: top left;
-  animation: rotate-earth 12s linear infinite;
+.shuttles:hover {
+  box-shadow: 5px 10px 8px #888888;
+  transform: translate(-5px, -20px);
+  cursor: pointer;
 }
-.earth:before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  border: 1px dashed rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  box-sizing: border-box;
-  transform: translate(-50%, -50%);
+.satlite:hover {
+  box-shadow: 5px 10px 8px #888888;
+  transform: translate(-5px, -20px);
+  cursor: pointer;
 }
-.moon {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: #fff;
-  top: 50%;
-  left: 50%;
-  transform-origin: top left;
-  animation: rotate-moon 6s linear infinite;
+.space_rover:hover {
+  box-shadow: 5px 10px 8px #888888;
+  transform: translate(-5px, -20px);
+  cursor: pointer;
 }
-@keyframes rotate-moon {
-  0% {
-    transform: rotate(0deg) translateX(30px);
-  }
-
-  100% {
-    transform: rotate(360deg) translateX(30px);
-  }
+.space_rover:active {
+  transform: scale(1.5);
+  margin-right: 75px;
+  margin-left: 75px;
 }
-@keyframes rotate-earth {
-  0% {
-    transform: rotate(0deg) translateX(100px);
-  }
-
-  100% {
-    transform: rotate(360deg) translateX(100px);
-  }
+.shuttles:active {
+  transform: scale(1.5);
+  margin-right: 75px;
+  margin-left: 75px;
 }
-#geeks {
-  width: 20%;
-  top: 50%;
-  /* position: absolute; */
-  left: 40%;
-  /* border-bottom: 5px solid white; */
-  overflow: hidden;
-  animation: animate 2s linear forwards;
-}
-
-#geeks h1 {
-  color: white;
-}
-
-@keyframes animate {
-  0% {
-    width: 0px;
-    height: 0px;
-  }
-
-  30% {
-    width: 50px;
-    height: 0px;
-  }
-
-  60% {
-    width: 50px;
-    height: 80px;
-  }
-}
-.community {
-  width: 45%;
-  top: 50%;
-  /* position: absolute; */
-  left: 40%;
-  /* border-bottom: 5px solid white; */
-  overflow: hidden;
-  animation: animate 2s linear forwards;
-}
-
-.community h1 {
-  color: white;
-}
-
-@keyframes animate {
-  0% {
-    width: 0px;
-    height: 0px;
-  }
-
-  30% {
-    width: 0px;
-    height: 0px;
-  }
-
-  60% {
-    width: 50px;
-    height: 80px;
-  }
-}
-.community_explain {
-  width: 45%;
-  top: 50%;
-  /* position: absolute; */
-  left: 40%;
-  /* border-bottom: 5px solid white; */
-  overflow: hidden;
-  animation: animate 2s linear forwards;
-  margin-right: 5px;
-}
-
-.community_explain h1 {
-  color: white;
-}
-
-@keyframes animate {
-  0% {
-    width: 65px;
-    height: 10px;
-  }
-
-  30% {
-    width: 20px;
-    height: 0px;
-  }
-
-  60% {
-    width: 25px;
-    /* height: 80px; */
-  }
+.satlite:active {
+  transform: scale(1.5);
+  margin-right: 75px;
+  margin-left: 75px;
 }
