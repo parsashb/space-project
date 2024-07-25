@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Magnifier -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- FaceBook -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- YouTube -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Instagram -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Map-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Telephone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- mail -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div id="geeks">
+        <h1>Aster1</h1>
+      </div>
+      <button id="nav_btn"><h2>Home</h2></button>
+      <button id="nav_btn"><h2>About</h2></button>
+      <div class="pages">
+        <button id="nav_btn" class="collapse" type="button">
+          <h2>pages</h2>
+        </button>
+        <div class="text">
+          <a href="blogs/index.html">blogs</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+        </div>
+      </div>
+      <button id="nav_btn"><h2>Contact Us</h2></button>
+      <i class="fa fa-search-plus" style="font-size: 20px"></i>
+    </nav>
+    <div class="intro_box">
+      <header>
+        <div class="community">
+          <h3 id="animation">A community Of astrology enthusaists</h3>
+        </div>
+      </header>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          tenetur atque, voluptate ipsum non, fugit tempora iure rerum neque
+          similique facere. Vitae culpa natus labore sunt repudiandae eum
+          doloremque mollitia?
+        </p>
+      </article>
+    </div>
+    <div class="solar">
+      <div class="sun"></div>
+
+      <div class="earth">
+        <div class="moon"></div>
+      </div>
+    </div>
+    <header><h3 id="animation">Astronomy Communities For Everyone</h3></header>
+    <div class="explain">
+      <article>
+        <p class="community_explain">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quae
+          totam fuga dolor maiores rerum aspernatur reiciendis temporibus
+          tempore aliquam! Dolore qui fugiat saepe ex in placeat ullam, aliquam
+          quisquam.
+        </p>
+      </article>
+      <div class="numbers">
+        <div id="nums">
+          <h2>2,950+</h2>
+          <h6>active users</h6>
+        </div>
+        <div id="nums">
+          <h2>12</h2>
+          <h6>Years of experience</h6>
+        </div>
+        <div id="nums">
+          <h2>5</h2>
+          <h6>Branch location</h6>
+        </div>
+        <div id="nums">
+          <h2>24</h2>
+          <h6>Observatory zones</h6>
+        </div>
+      </div>
+    </div>
+    <div class="explore">
+      <header>
+        <h2>Let's Explore with us</h2>
+      </header>
+      <div class="sign_ad"></div>
+      <article>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quos
+        commodi provident aliquam debitis accusamus facilis laborum nihil aut
+        excepturi sint consectetur officia tenetur, qui possimus inventore
+        perferendis, iusto veniam.
+      </article>
+      <button class="join">Join Us Now</button>
+    </div>
+    <footer>
+      <div class="influence">
+        <h1>Aster1</h1>
+        <p class="slogan">Lorem o earum voluptate excepturi recusan</p>
+        <i class="fa fa-facebook-f"></i><i class="fa fa-youtube-play"></i
+        ><i class="fa fa-instagram"></i>
+      </div>
+      <div class="shop">
+        <header>
+          <h3>Our shop</h3>
+        </header>
+        <h4>Merch</h4>
+        <h4>Home</h4>
+        <h4>Kits</h4>
+        <h4>Books</h4>
+      </div>
+      <div class="in_touch">
+        <header>
+          <h3>Get in touch</h3>
+        </header>
+        <i class="fa fa-map-marker">Central yahrnem</i>
+        <i class="fa fa-phone">+345698544</i>
+        <i class="fa fa-envelope">+6456945</i>
+      </div>
+    </footer>
+    <script>
+      let btn = document.getElementsByClassName("collapse");
+
+      btn[0].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    </script>
+  </body>
+</html>
