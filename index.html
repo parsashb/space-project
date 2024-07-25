@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Blog</title>
+    <!-- moon icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header><h1>Our Blog</h1></header>
+    <nav>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <button onclick="lightMode()">
+        <i class="fa fa-moon-o" style="font-size: 40px"></i>
+      </button>
+    </nav>
     <div class="posts" id="blog1" onclick="img1Scale">
       <div class="satlite">
         <img src="images/860x394.jpg" alt="astelite picture" />
@@ -37,13 +52,14 @@
         </p>
       </div>
     </div>
-    <!-- <script>
-      let img = document.getElementById("blog1");
-
-      function img1Scale() {
-        img.style.transform = "scale(1.5)";
-        img.style.transition = "transform 0.25 ease";
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
       }
-    </script> -->
+      function lightMode() {
+        let element = document.body;
+        element.classList.toggle("light");
+      }
+    </script>
   </body>
 </html>

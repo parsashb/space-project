@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1f1f1f;
 }
 body {
   background-color: #1f1f1f;
@@ -10,19 +11,22 @@ body {
 img {
   width: 350px;
   height: 250px;
+  border-radius: 15px;
 }
 h1 {
   text-align: center;
   margin: 0.5rem;
   text-decoration: underline;
   color: white;
+  background-color: #1f1f1f;
 }
 .posts {
   display: flex;
   color: white;
-  gap: 2rem;
+  gap: 3rem;
   justify-content: center;
   margin-top: 3.5rem;
+  background-color: #1f1f1f;
 }
 .satlite,
 .shuttles,
@@ -31,6 +35,7 @@ h1 {
   margin-top: 2rem;
   width: 350px;
   transform: translate(-5px, -5px);
+  border-radius: 15px;
 }
 .shuttles:hover {
   box-shadow: 5px 10px 8px #888888;
@@ -61,4 +66,144 @@ h1 {
   transform: scale(1.5);
   margin-right: 75px;
   margin-left: 75px;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+button {
+  color: #ffffff;
+  float: right;
+  margin-right: 15px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+.light {
+  * {
+    background-color: #ffffff;
+  }
+  .container {
+    color: #1f1f1f;
+    background-color: #ffffff;
+  }
+  body {
+    background-color: #ffffff;
+  }
+
+  img {
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+  }
+  h1 {
+    text-align: center;
+    margin: 0.5rem;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    background-color: #f4f2f2;
+  }
+  .posts {
+    display: flex;
+    color: rgb(0, 0, 0);
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 3.5rem;
+    background-color: #f0f0f0;
+  }
+  .satlite,
+  .shuttles,
+  .space_rover {
+    box-shadow: 5px 10px 8px #7e1414;
+    margin-top: 2rem;
+    width: 350px;
+    transform: translate(-5px, -5px);
+    border-radius: 15px;
+  }
+  .shuttles:hover {
+    box-shadow: 5px 10px 8px #c01c1c;
+    transform: translate(-5px, -20px);
+    cursor: pointer;
+  }
+  .satlite:hover {
+    box-shadow: 5px 10px 8px #8d1313;
+    transform: translate(-5px, -20px);
+    cursor: pointer;
+  }
+  .space_rover:hover {
+    box-shadow: 5px 10px 8px #771414;
+    transform: translate(-5px, -20px);
+    cursor: pointer;
+  }
+  .space_rover:active {
+    transform: scale(1.5);
+    margin-right: 75px;
+    margin-left: 75px;
+  }
+  .shuttles:active {
+    transform: scale(1.5);
+    margin-right: 75px;
+    margin-left: 75px;
+  }
+  .satlite:active {
+    transform: scale(1.5);
+    margin-right: 75px;
+    margin-left: 75px;
+  }
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  button {
+    color: #000000;
+    float: right;
+    margin-right: 15px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
 }
