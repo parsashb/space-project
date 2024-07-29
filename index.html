@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Browse Our Prememium Products</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        autem eaque reiciendis, odit maiores quos architecto pariatur voluptate,
+        repudiandae perferendis veritatis neque aliquam iusto. Odit ullam cumque
+        necessitatibus obcaecati recusandae?
+      </p>
+    </header>
+    <div class="products">
+      <div id="buy" onclick="counterSh()">
+        <img src="images/shuttle replica.webp" alt="replica" />
+        <span id="mainPriceSh"><h4>50$</h4></span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas,
+          non. Dicta, sunt consequatur! Odio a alias voluptatibus ea culpa eaque
+          saepe quidem reiciendis non earum quod, nihil aut sint harum.
+        </p>
+        <span id="displaySh"><h2>0</h2></span>
+      </div>
+      <div id="buy" onclick="counter()">
+        <img src="images/telescope.jfif" alt="telescope pictures" />
+        <span id="mainPriceTl"><h4>50$</h4></span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi,
+          minus ullam doloremque tempore, atque totam vero, reprehenderit nihil
+          nobis hic quod est exercitationem molestias. Quis accusantium nam qui
+          expedita iste.
+        </p>
+        <span id="display"><h2>0</h2></span>
+      </div>
+    </div>
+    <footer>
+      <button><a href="payment/payment.html">Go to Payment</a></button>
+    </footer>
+    <script>
+      let count = 0;
+      let countsh = 0;
+      let shPrice = 0;
+      let tlPrice = 0;
+      let overAllPriceTl = document.getElementById("mainPriceTl");
+      let overAllPriceSh = document.getElementById("mainPriceSh");
+      let buy = document.getElementById("buy");
+      let display = document.getElementById("display");
+      let displayShuttle = document.getElementById("displaySh");
+      function counter() {
+        count++;
+        display.innerHTML = count;
+        tlPrice = tlPrice + 50;
+        overAllPriceTl.innerHTML = tlPrice;
+      }
+      function counterSh() {
+        countsh++;
+        displayShuttle.innerHTML = countsh;
+        shPrice = shPrice + 50;
+        overAllPriceSh.innerHTML = shPrice;
+      }
+    </script>
+  </body>
+</html>
